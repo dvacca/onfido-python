@@ -75,18 +75,14 @@ jobs:
         with:
           token: ${{ secrets.GH_ACTION_ACCESS_TOKEN }}
           ref: master
-          repository: ${{ github.repository_owner }}/${{ github.event.repository.name }}
-          fetch-depth: 0
+          # repository: ${{ github.repository_owner }}/${{ github.event.repository.name }}
+          # fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.x"
       - name: Validate release
         uses: onfido/onfido-actions/release-check@main
-      - name: Log info
-        run: |
-          echo "ref: ${{ github.ref_name }}"
-          echo "repository: ${{ github.repository_owner }}/${{ github.event.repository.name }}"
       # - name: Build package
       #   run: python -m build
       # - name: Publish package
