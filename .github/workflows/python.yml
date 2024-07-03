@@ -82,7 +82,7 @@ jobs:
         with:
           python-version: "3.x"
       - name: Validate release
-        uses: onfido/onfido-actions/release-check@improve-changelog-update-script
+        uses: onfido/onfido-actions/release-check@main
       # - name: Build package
       #   run: python -m build
       # - name: Publish package
@@ -91,4 +91,4 @@ jobs:
       #     user: __token__
       #     password: ${{ secrets.PYPI_API_TOKEN }}
       - name: Update and commit CHANGELOG.md
-        uses: onfido/onfido-actions/update-changelog@improve-changelog-update-script
+        uses: onfido/onfido-actions/update-changelog@main
