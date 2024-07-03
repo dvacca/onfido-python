@@ -76,6 +76,7 @@ jobs:
           token: ${{ secrets.GH_ACTION_ACCESS_TOKEN }}
           ref: ${{ github.event.release.tag_name }}
           repository: ${{ github.repository_owner }}/${{ github.event.repository.name }}
+          fetch-depth: 0
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
