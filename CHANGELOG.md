@@ -9,6 +9,12 @@
 ## v3.2.0 3rd July 2024
 
 - Release based on Onfido OpenAPI spec version [v3.1.0](https://github.com/onfido/onfido-openapi-spec/releases/tag/v3.1.0):
+  - Nested changelog line from spec change
+- Extra changelog line from library change
+
+## v3.2.0 3rd July 2024
+
+- Release based on Onfido OpenAPI spec version [v3.1.0](https://github.com/onfido/onfido-openapi-spec/releases/tag/v3.1.0):
   - This is a test release
 
 ## v3.2.0 3rd July 2024
